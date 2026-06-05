@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body main section.bg-image .header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 100px;
+  padding-right: 78px;
+}
+body header nav ul {
+  display: flex;
+  gap: 50px;
+}
+body header nav ul li {
+  color: rgb(99, 96, 96);
+  font-size: 18px;
+  transition: all linear 1.2s;
+}
+body header nav ul li:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+body main section.bg-image {
+  max-width: 1440px;
+  width: 100%;
+  height: 600px;
+  background-image: url("/images/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+body main section.bg-image .header {
+  color: white;
+}
+body main section.bg-image .header h1 {
+  font-size: 80px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+body main section.bg-image .header p {
+  font-size: 20px;
+  text-align: center;
+}
+body main section.tours .header {
+  font-size: 40px;
+}/*# sourceMappingURL=styles.css.map */
