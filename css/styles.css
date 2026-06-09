@@ -156,8 +156,13 @@ body {
 body header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 100px;
   padding-right: 78px;
+}
+body header img {
+  width: 33px;
+  height: 42px;
 }
 body header nav ul {
   display: flex;
@@ -172,6 +177,30 @@ body header nav ul li:hover {
   font-size: 30px;
   cursor: pointer;
 }
+@media (max-width: 764px) {
+  body header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 480px) {
+  body header nav ul {
+    display: none;
+  }
+}
+body header .burger-menu {
+  display: none;
+}
+@media (max-width: 480px) {
+  body header .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  body header {
+    padding: 24px 20px;
+  }
+}
 body main section.bg-image {
   max-width: 1440px;
   width: 100%;
@@ -184,6 +213,7 @@ body main section.bg-image {
 }
 body main section.bg-image .header {
   color: white;
+  text-align: center;
 }
 body main section.bg-image .header h1 {
   font-size: 80px;
@@ -192,8 +222,61 @@ body main section.bg-image .header h1 {
 }
 body main section.bg-image .header p {
   font-size: 20px;
-  text-align: center;
 }
-body main section.tours .header {
-  font-size: 40px;
+body main section.tours {
+  padding: 85px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+body main section.tours .left-side {
+  min-width: 240px;
+  width: 240px;
+}
+body main section.tours .left-side p,
+body main section.tours .left-side span {
+  color: rgb(99, 96, 96);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+body main section.tours .left-side span {
+  font-size: 20px;
+}
+body main section.tours .left-side .header {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1450px) {
+  body main section.tours .left-side {
+    text-align: center;
+    width: 600px;
+  }
+}
+body main section.tours .right-side {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main section.tours .right-side .tour-item {
+  width: 290px;
+  margin-bottom: 56px;
+}
+body main section.tours .right-side .tour-item img {
+  margin-bottom: 24px;
+}
+body main section.tours .right-side .tour-item h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(52, 50, 50);
+}
+body main section.tours .right-side .tour-item p {
+  font-size: 18px;
+  color: rgb(99, 96, 96);
+}
+@media (max-width: 1100px) {
+  body main section.tours .right-side {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=styles.css.map */
